@@ -4,14 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Películas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Agregar película</a>
 </p>
 <table class="table">
     <thead>
+<<<<<<< HEAD
         <tr>
+
+=======
+        <tr class="movies-text">
+>>>>>>> e4f5e7603e40d53cf48fedf35e376154fdd0c97f
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
@@ -29,7 +34,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+         <tr class="movies-text">
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
@@ -43,9 +48,9 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id"class="btn btn-danger">Delete</a>
             </td>
         </tr>
 }

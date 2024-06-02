@@ -15,5 +15,40 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: #f7fbfe;
+    background: linear-gradient(135deg, #000123 3%, #060B48 100%);
+    background-size: cover;
+    color: white; /* Opcional: para que el texto sea blanco por defecto */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background: linear-gradient(135deg, #000123 0%, #00183a 100%);
+    color: white;
+}
+
+/* Estilo para la marca de la barra de navegación */
+.navbar-brand {
+    color: white !important;
+}
+
+    /* Estilo para el hover de la marca de la barra de navegación */
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        color: #17a2b8 !important; /* Color celeste al pasar el mouse */
+    }
+
+/* Estilo para los enlaces de navegación */
+.nav-link {
+    color: white !important;
+}
+
+    /* Estilo para el hover de los enlaces de navegación */
+    .nav-link:hover,
+    .nav-link:focus {
+        color: #17a2b8 !important; /* Color celeste al pasar el mouse */
+    }
+
+/* Estilos específicos para la vista Movies */
+.movies-text {
+    color: #EEEEEE;
 }
